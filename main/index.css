@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    color: white;
+    background: linear-gradient(75deg, #011526, #081b3a 40%, #02111c 55%);
+    font-size: 1.4rem;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 200;
+    text-shadow: 0 0 15px #FFFFFFB3;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+}
+
+.pages {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    right: 0;
+}
+
+.pages li {
+    margin: 0 10px;
+}
+
+.main {
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+}
+
+#mainsection {
+    width: 100%;
+    height: 75vh;
+    padding-top: 80px;
+}
+
+.title {
+    margin-top: 40px;
+}
+
+.title h2 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    animation: fadeFloat 3s ease-in-out infinite alternate;
+}
+
+/*アニメーション*/
+@keyframes fadeFloat {
+    from {
+        opacity: 0.5;
+        transform: translateY(3px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-3px);
+    }
+}
+
+.section_header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section_num {
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    color: #48cae4;
+    opacity: 0.7;
+}
+
+.section_title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+.section_line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, #48CAE466, transparent);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content h3 {
+    margin-bottom: 0;
+    letter-spacing: 0.1rem;
+}
+
+.content-box {
+    /*背景*/
+}
+
+.first {
+    font-size: 2.2rem;
+}
+
+.subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 0.15rem;
+    margin-top: 0;
+}
+
+.content_v {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.content_box_v {
+    margin-top: 2rem;
+    background: #48CAE412;
+    border-radius: 5rem;
+    border: 1px solid #48CAE433;
+    padding: 1rem;
+}
+
+.content_box_v h4 {
+    font-size: 2.5rem;
+    margin: 0 0 10px;
+}
+
+.content_box_v p {
+    font-size: 0.9rem;
+    letter-spacing: 0.3rem;
+    margin: 0;
+}
+
+/*VRCの画像*/
+
+.programming ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.programming ul li {
+    margin: 10px 10px 15px 10px;
+    font-size: 1.2rem;
+    background: linear-gradient(45deg, #0077b6, #023e8a);
+    border-radius: 15px;
+}
+
+.content_g {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content_box_g {
+    background: #0077B633;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /*Safari対応*/
+    border: 1px solid #90E0EF4D;
+    border-radius: 16px;
+}
+
+.friends_sites {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.friends_sites span {
+    font-size: 0.8rem;
+}
+
+.content_f {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: stretch;
+}
+
+.friend_card {
+    display: block;
+    background: #0077B633;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /*Safari対応*/
+    border: 1px solid #90E0EF4D;
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    min-width: 300px;
+}
+
+.footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #232323;
+    padding-bottom: 20px;
+}
+
+.footer p {
+    margin: 5px;
+}
