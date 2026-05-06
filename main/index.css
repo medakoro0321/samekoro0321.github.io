@@ -53,6 +53,21 @@ a {
     padding-top: 80px;
 }
 
+#main_subtitle {
+    text-align: center;
+    letter-spacing: 0.25rem;
+    font-size: 1rem;
+    color: darkgray;
+    font-family: "JetBrains Mono", monospace;
+}
+
+#error {
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: wavy;
+    text-underline-offset: 3px;
+}
+
 .title {
     margin-top: 40px;
 }
