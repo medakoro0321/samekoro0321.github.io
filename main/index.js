@@ -77,16 +77,11 @@ function generatePlankton() {
 
 let text = "<h2 class=\"title\"> 🦈さめころのホームページへようこそ! </h2>"
 let textDesc = "/* WELCOME TO SAMEKORO's HOMEPAGE. */"
-/*
- * 海の底に、もう一人の私がいる。
- * 穏やかで、静かで、重さもなく、やっと自由になれた姿で。
- * いつかそこへ行けたなら——
- * 流れがこの真っ黒な世界から、逃してくれるように。
- */
 let textSubtitle = "Console.WriteLine(\"There\'s a version of me at the bottom of the ocean. \n He looks peaceful — still, weightless, finally free. \n Maybe I\'ll join him someday, hoping the current carries me away from this darkened world.\");"
 const target = document.getElementById("main_title");
 const targetDesc = document.getElementById("main_description");
 const targetSubtitle = document.getElementById("main_subtitle");
+const targetSubtitleDesc = document.getElementById("main_subtitle_description");
 let i = 0;
 let status = 0;
 
@@ -130,6 +125,8 @@ function typing() {
             } else {
                 const finallychar = "There\'s a version of me at the bottom of the ocean. \n He looks peaceful — still, weightless, finally free. \n <span id='error'><span style='color: darkgray'>Maybe I\'ll join him someday, hoping the current carries me away from this darkened world.</span></span>"
                 targetSubtitle.innerHTML = finallychar.replaceAll('\n', '<br>');
+                const errorChar = "NullReferenceException: Object 'self' is not found in this WORLD. \n     at Soul.Escape(World darkened_world) in /root/me.cs:line 3 \n     at Me.JoinHim() — target instance unreachable"
+                targetSubtitleDesc.innerHTML = errorChar.replaceAll('\n', '<br>');
             }
             break;
     }
