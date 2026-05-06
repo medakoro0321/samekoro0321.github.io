@@ -19,6 +19,14 @@
     text-underline-offset: 3px;
 }
 
+#main_subtitle_description {
+    text-align: right;
+    font-size: 0.7em;
+    color: #ff3d5a;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 200;
+}
+
 .content {
     display: flex;
     flex-direction: column;
