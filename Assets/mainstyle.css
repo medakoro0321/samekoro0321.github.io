@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    color: white;
+    background: linear-gradient(75deg, #011526, #081b3a 40%, #02111c 55%);
+    font-size: 1.4rem;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 200;
+    text-shadow: 0 0 15px #FFFFFFB3;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+}
+
+.pages {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    right: 0;
+}
+
+.pages li {
+    margin: 0 10px;
+}
+
+.main {
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+}
+
+.title {
+    margin-top: 40px;
+}
+
+.title h2 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    animation: fadeFloat 3s ease-in-out infinite alternate;
+}
+
+/*アニメーション*/
+@keyframes fadeFloat {
+    from {
+        opacity: 0.5;
+        transform: translateY(3px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-3px);
+    }
+}
+
+.section_header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.section_num {
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    color: #48cae4;
+    opacity: 0.7;
+}
+
+.section_title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+.section_line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, #48CAE466, transparent);
+}
+
+
+
+.footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #232323;
+    padding-bottom: 20px;
+}
+
+.footer p {
+    margin: 5px;
+}
