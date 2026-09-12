@@ -1,0 +1,49 @@
+.commissionList ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.commissionList ul li {
+    margin: 10px 10px 15px 10px;
+    font-size: 1.2rem;
+    background: linear-gradient(45deg, #0077b6, #023e8a);
+    border-radius: 15px;
+}
+
+.portfolioSection {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1300px) {
+    .portfolioSection {
+        gap: 10px;
+        flex-direction: column;
+    }
+}
+
+.portfolioImage {
+    width: min(100%, 800px);
+    height: auto;
+    display: block;
+}
+
+.portfolioDesc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.portfolioWebHeader div {
+    flex: 1;
+    height: 1.1px;
+    background: linear-gradient(90deg, #48CAE466, transparent);
+}
+
+.portfolioImageLink {
+    width: min(100%, 800px);
+    height: auto;
+    display: block;
+}
