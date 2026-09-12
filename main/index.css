@@ -125,6 +125,15 @@
     align-items: stretch;
 }
 
+@media (max-width: 900px) {
+    .content_f {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: stretch;
+}
+}
+
 .friend_card {
     display: block;
     background: #0077B633;
