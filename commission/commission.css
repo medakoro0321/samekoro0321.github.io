@@ -47,3 +47,18 @@
     height: auto;
     display: block;
 }
+
+.commissionContact {
+    border-bottom: solid;
+    border-color: #0077b6;
+    border-width: 2px;
+    font-weight: bold;
+}
+
+.commissionContact::before {
+    content: "\" ";
+}
+
+.commissionContact::after {
+    content: " \"";
+}
